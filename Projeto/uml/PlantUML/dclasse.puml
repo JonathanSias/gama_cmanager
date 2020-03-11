@@ -1,0 +1,65 @@
+@startuml
+    skinparam ClassBackgroundColor Snow
+    skinparam ClassBorderColor Navy
+    skinparam ClassFontColor Navy
+    skinparam ClassAttributeFontColor Navy
+
+    class Museu{
+        String nome
+        String endereco
+        String diretor
+        String descricao
+        String codigoMuseu
+    }
+
+    class Coleção{
+        String nome
+        String descricao
+        String codigoColecao
+    }
+
+    class Peça{
+        String nome
+        Date data
+        String epoca
+        String colecao
+        String codigoPeca
+        String autor
+        String titulo
+        String material
+        String tecnica
+        String autoria
+        String localDeProducao
+        String doador
+        String altura
+        String largura
+        String comprimento
+        String descricao
+        String localizacao
+        String inscricao
+        String situacao
+        String referenciaNoAcervo
+        String classificacao
+        String observacoes
+        String recebidoPor
+        String preenchidoPor
+        Date dataDePreenchimento
+        String revisadoPor
+        Date dataDeRevisao
+    }
+
+    Class Usuário{
+        String nome
+        String sobrenome
+        String email
+        String cpf
+    }
+    
+    Museu "1" *-- "n" Coleção
+    Coleção "n" *-- "n" Peça
+    Museu "1" --* "n" Usuário
+    class Museu << (M, LightSteelBlue) >>
+    class Coleção << (C, LightSteelBlue) >>
+    class Usuário << (U, LightSteelBlue) >>
+    class Peça << (P, LightSteelBlue) >>
+@enduml

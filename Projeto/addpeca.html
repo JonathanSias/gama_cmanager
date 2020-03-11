@@ -1,0 +1,248 @@
+<!-------------------------------------------------------->
+<!-- GAMA - Gerenciador de Acervos de Museus Acadêmicos -->
+<!-------------------------------------------------------->
+<!DOCTYPE html>
+<html lang="pt-br">
+    <!-- HEAD -->
+    <head>
+       <!-- Basic Page Needs
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <meta charset="utf-8">
+        <!-- TITLE -->
+        <title>Gerenciador de Acervos de Museus Acadêmicos</title>
+        <link rel="icon" href="_icons/favicon/favicon-32x32.png">
+        <meta name="description" content="">
+        <meta name="author" content="Jonathan Sias">
+        <!--  -->
+        <!-- Responsive attribute to mobiles view -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+        <!-- Font Awesome Icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- STYLE -->
+        <link rel="stylesheet" href="_css/index.css">
+    </head>
+    <!-- BODY
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <body class="main">
+        <!-- HEADER -->
+        <header>
+            <!-- Top Nav -->
+            <div class="topnav">
+                <ul class="nav navbar-nav">
+                    <li> <a href="login.html"> <i class="fa fa-sign-in"></i> Login</a> </li>
+                </ul>
+                <!-- <nav>
+                    <a class="active" href="login.html">Login</a>
+                </nav> -->
+            </div>
+        </header>
+        <!-- Side Nav
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <div class="sidenav">
+            <div>
+                <ul class="nav navbar-nav">
+                    <li> <a href="index.html"> <i class="fa fa-home"></i> Home</a> </li>
+                    <li> <a href="museus.html"> <i class="fa fa-university"></i> Museus</a> </li>
+                    <li> <a href="colecoes.html"> <i class="fa fa-tags"></i> Coleções</a> </li>
+                    <li> <a href="pecas.html"> <i class="fa fa-picture-o"></i> Peças</a> </li>
+                    <li> <a href="usuarios.html"> <i class="fa fa-users"></i> Usuários</a> </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Content
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <div class="conteudo">
+            <!-- Add User Form -->
+            <h2>Cadastrar Museu</h2>
+            <div class="form-group">
+                <label for="nome">Nome</label>
+                <input type="text" class="form-control" id="nome" style="width: 50%" placeholder="Digite o nome da obra">
+            </div>
+    
+            <div class="form-group">
+                <label for="instituicao">Instituição</label>
+                <input type="text" class="form-control" id="instituicao" style="width: 50%" placeholder="Nome da instituição">
+            </div>
+    
+            <div class="form-group">
+                <label for="inventario">Número de inventário</label>
+                <input type="text" class="form-control" id="ninventario" style="width: 50%" placeholder="Número de inventário">
+            </div>
+
+            <!-- <div class="form-group">
+                <label for=""></label>
+                <select class="form-control" style="width: 50%" id="" name="">
+                    <option value="1">Turing</option>
+                    <option value="2">Dijkstra</option>
+                    <option value="3">Lovelace</option>
+                </select>
+            </div> -->
+    
+            <div class="form-group">
+                <label for="onumeros">Outros números</label>
+                <input type="text" class="form-control" id="onumeros" style="width: 50%" placeholder="Números...">
+            </div>
+
+            <div class="form-group">
+                <label for="data">Data</label>
+                <input type="date" class="form-control" id="data" style="width: 50%">
+            </div>
+
+            <div class="form-group">
+                <label for="epoca">Época</label>
+                <input type="text" class="form-control" id="epoca" style="width: 50%" placeholder="Informe a época">
+            </div>
+
+            <div class="form-group">
+                <label for="colecao">Coleção</label>
+                <select class="form-control" style="width: 50%" id="colecao" name="colecao">
+                    <option value="1">Copa do Mundo 2002</option>
+                    <option value="2">Libertadores 2017</option>
+                    <option value="3">Copa do Brasil 2018</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="titulo">Título</label>
+                <input type="text" class="form-control" id="titulo" style="width: 50%" placeholder="Informe o título da obra">
+            </div>
+
+            <div class="form-group">
+                <label for="material">Material</label>
+                <input type="text" class="form-control" id="material" style="width: 50%" placeholder="Material...">
+            </div>
+
+            <div class="form-group">
+                <label for="tecnica">Técnica</label>
+                <input type="text" class="form-control" id="tecnica" style="width: 50%" placeholder="Técnica utilizada">
+            </div>
+
+            <div class="form-group">
+                <label for="autoria">Autoria</label>
+                <input type="text" class="form-control" id="autoria" style="width: 50%" placeholder="Autoria da obra">
+            </div>
+
+            <div class="form-group">
+                <label for="altura">Altura</label>
+                <input type="text" class="form-control" id="altura" style="width: 50%" placeholder="Altura">
+            </div>
+
+            <div class="form-group">
+                <label for="largura">Largura</label>
+                <input type="text" class="form-control" id="largura" style="width: 50%" placeholder="Largura">
+            </div>
+
+            <div class="form-group">
+                <label for="comprimento">Comprimento</label>
+                <input type="text" class="form-control" id="comprimento" style="width: 50%" placeholder="Comprimento">
+            </div>
+
+            <div class="form-group">
+                <label for="procedencia">Procedência</label>
+                <input type="text" class="form-control" id="procedencia" style="width: 50%" placeholder="Procedência">
+            </div>
+
+            <div class="form-group">
+                <label for="doador">Doador</label>
+                <input type="text" class="form-control" id="doador" style="width: 50%" placeholder="Doador">
+            </div>
+
+            <div class="form-group">
+                <label for="producao">Local de Produção</label>
+                <input type="text" class="form-control" id="producao" style="width: 50%" placeholder="Local de produção da peça">
+            </div>
+
+            <div class="form-group">
+                <label for="descricao">Descrição</label>
+                <textarea class="form-control" id="descricao" style="width: 50%" rows="8" placeholder="Descrição..."></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="estado">Estado de Conservação</label>
+                <input type="text" class="form-control" id="estado" style="width: 50%" placeholder="Estado de conservação da peça">
+            </div>
+
+            <div class="form-group">
+                <label for="ccmr">Circulação/Condição de Reprodução/Mídias Relacionadas</label>
+                <input type="text" class="form-control" id="ccmr" style="width: 50%" placeholder="...">
+            </div>
+
+            <div class="form-group">
+                <label for="localizacao">Localização</label>
+                <input type="text" class="form-control" id="localizacao" style="width: 50%" placeholder="Localização...">
+            </div>
+
+            <div class="form-group">
+                <label for="situacao">Situação</label>
+                <input type="text" class="form-control" id="situacao" style="width: 50%" placeholder="Situação...">
+            </div>
+
+            <div class="form-group">
+                <label for="inscricao">Inscrição</label>
+                <input type="text" class="form-control" id="inscricao" style="width: 50%" placeholder="Inscrição...">
+            </div>
+
+            <div class="form-group">
+                <label for="refacervo">Referência no Acervo</label>
+                <input type="text" class="form-control" id="referencia" style="width: 50%" placeholder="Referência no acervo">
+            </div>
+
+            <div class="form-group">
+                <label for="classificacao">Classificação</label>
+                <input type="text" class="form-control" id="classificacao" style="width: 50%" placeholder="Classificação...">
+            </div>
+
+            <div class="form-group">
+                <label for="observacoes">Observações</label>
+                <textarea class="form-control" id="observacoes" style="width: 50%" rows="8" placeholder="Observações..."></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="recebido">Recebido Por</label>
+                <input type="text" class="form-control" id="recebido" style="width: 50%" placeholder="Recebido por...">
+            </div>
+
+            <div class="form-group">
+                <label for="drecebimento">Data de recebimento</label>
+                <input type="date" class="form-control" id="drecebimento" style="width: 50%">
+            </div>
+
+            <div class="form-group">
+                <label for="preenchido">Preenchido por</label>
+                <select class="form-control" style="width: 50%" id="preenchido" name="preenchido">
+                    <option value="1">Turing</option>
+                    <option value="2">Dijkstra</option>
+                    <option value="3">Lovelace</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="dpreenchimento">Data de preenchimento</label>
+                <input type="date" class="form-control" id="dpreenchimento" style="width: 50%">
+            </div>
+
+            <div class="form-group">
+                <label for="revisado">Revisado por</label>
+                <select class="form-control" style="width: 50%" id="revisado" name="revisado">
+                    <option value="1">Turing</option>
+                    <option value="2">Dijkstra</option>
+                    <option value="3">Lovelace</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="drevisao">Data de revisão</label>
+                <input type="date" class="form-control" id="drevisao" style="width: 50%">
+            </div>
+            <button type="submit" class="btn btn-default">Adicionar</button>
+        </div>
+    </body>
+</html>

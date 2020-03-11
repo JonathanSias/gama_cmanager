@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Poiret+One');
+.main {
+    font-family: 'Poiret One', cursive;
+    margin: 0;
+}
+/* TOPNAV */
+.topnav {
+    overflow: hidden;
+    background-color: #f2b632;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 0;
+}
+.topnav a {
+    background-color: white;
+    float: right;
+    color: #252839;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 14px 16px;
+}
+.topnav a:hover {
+    background-color: #252839;
+    color: #f2b632;
+}
+
+/* SIDENAV */
+.sidenav {
+    height: 100%;
+    width: 15%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #252839;
+    overflow-x: hidden;
+    padding-top: 4%;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* overflow: auto; */
+}
+.sidenav i {
+    font-size: 25px;
+    padding: 0% 0% 0% 10%;
+}
+.sidenav a {
+    /* padding: 5% 10% 5% 15%; */
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-decoration: none;
+    font-size: 25px;
+    color: #f2b632;
+    display: block;
+}
+.sidenav a:hover {
+    background-color: #f2b632;
+    color: #252839;
+}
+.conteudo {
+    margin: 5% 5% 5% 20%;
+    text-align: justify;
+    color: #252839;
+}
+.conteudo h2 {
+    padding-bottom: 3%;
+}

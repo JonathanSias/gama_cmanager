@@ -1,0 +1,108 @@
+<!-------------------------------------------------------->
+<!-- GAMA - Gerenciador de Acervos de Museus Acadêmicos -->
+<!-------------------------------------------------------->
+<!DOCTYPE html>
+<html lang="pt-br">
+    <!-- HEAD -->
+    <head>
+       <!-- Basic Page Needs
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <meta charset="utf-8">
+        <!-- TITLE -->
+        <title>Gerenciador de Acervos de Museus Acadêmicos</title>
+        <link rel="icon" href="_icons/favicon/favicon-32x32.png">
+        <meta name="description" content="">
+        <meta name="author" content="Jonathan Sias">
+        <!--  -->
+        <!-- Responsive attribute to mobiles view -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+        <!-- Font Awesome Icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- STYLE -->
+        <link rel="stylesheet" href="_css/index.css">
+    </head>
+    <!-- BODY
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <body class="main">
+        <!-- HEADER -->
+        <header>
+            <!-- Top Nav -->
+            <div class="topnav">
+                <ul class="nav navbar-nav">
+                    <li> <a href="login.html"> <i class="fa fa-sign-in"></i> Login</a> </li>
+                </ul>
+                <!-- <nav>
+                    <a class="active" href="login.html">Login</a>
+                </nav> -->
+            </div>
+        </header>
+        <!-- Side Nav
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <div class="sidenav">
+            <div>
+                <ul class="nav navbar-nav">
+                    <li> <a href="index.html"> <i class="fa fa-home"></i> Home</a> </li>
+                    <li> <a href="museus.html"> <i class="fa fa-university"></i> Museus</a> </li>
+                    <li> <a href="colecoes.html"> <i class="fa fa-tags"></i> Coleções</a> </li>
+                    <li> <a href="pecas.html"> <i class="fa fa-picture-o"></i> Peças</a> </li>
+                    <li> <a href="usuarios.html"> <i class="fa fa-users"></i> Usuários</a> </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Content
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <div class="conteudo">
+            <!-- Add User Form -->
+            <h2>Cadastrar Museu</h2>
+            <div class="form-group">
+                <label for="nome">Nome</label>
+                <input type="text" class="form-control" id="nome" style="width: 50%" placeholder="Digite o nome do museu">
+            </div>
+    
+            <div class="form-group">
+                <label for="endereco">Endereço</label>
+                <input type="text" class="form-control" id="endereco" style="width: 50%" placeholder="Digite o endereço">
+            </div>
+    
+            <div class="form-group">
+                <label for="codigo">Código</label>
+                <input type="text" class="form-control" id="codigo" style="width: 50%" placeholder="Informe o código do museu">
+            </div>
+
+            <div class="form-group">
+                <label for="diretor">Diretor</label>
+                <select class="form-control" style="width: 50%" id="diretor" name="diretor">
+                    <option value="1">Turing</option>
+                    <option value="2">Dijkstra</option>
+                    <option value="3">Lovelace</option>
+                </select>
+            </div>
+    
+            <div class="form-group">
+                <label for="telefone">Telefone</label>
+                <input type="text" class="form-control" id="telefone" style="width: 50%" placeholder="Informe o telefone do museu">
+            </div>
+
+            <div class="form-group">
+                <label for="horarios">Horário de Funcionamento</label>
+                <textarea class="form-control" id="horarios" style="width: 50%" rows="6" placeholder="Horário de funcionamento"></textarea>
+                <!-- <input type="text" class="form-control" id="horarios" style="width: 50%" placeholder="Horário de funcionamento"> -->
+            </div>
+
+            <div class="form-group">
+                <label for="sobre">Descrição</label>
+                <!-- <input type="text" class="form-control" id="descricao" style="width: 50%;" rows="6" placeholder="Sobre o museu"> -->
+                <textarea class="form-control" id="descricao" style="width: 50%" rows="6" placeholder="Sobre o museu"></textarea>
+            </div>
+            <button type="submit" class="btn btn-default">Cadastrar</button>
+        </div>
+    </body>
+</html>

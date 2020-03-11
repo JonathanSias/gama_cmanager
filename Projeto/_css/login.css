@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Poiret+One');
+/* font-family: 'Poiret One', cursive; */
+.login-page {
+    width: 460px;
+    padding: 8% 0 0;
+    margin: auto;
+}
+.form {
+    position: relative;
+    z-index: 1;
+    background-color: #f2b632;
+    max-width: 360px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: left;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.form label {
+    color: #252839;
+}
+.form input {
+    font-family: 'Poiret One', cursive;
+    outline: 0;
+    background: white;
+    color: black;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+.form button {
+    font-family: 'Poiret One', cursive;
+    text-transform: uppercase;
+    outline: 0;
+    background-color: #2f3348;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #f2b632;
+    font-size: 14px;
+    cursor: pointer;
+}
+.form button:hover,.form button:active,.form button:focus {
+    background: #252839;
+}
+.login-page {
+    position: relative;
+    /* max-width: 300px; */
+    margin: 0 auto;
+}
+body {
+    background-color: #252839;
+    font-family: 'Poiret One', cursive;
+}

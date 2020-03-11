@@ -1,0 +1,158 @@
+<!-------------------------------------------------------->
+<!-- GAMA - Gerenciador de Acervos de Museus Acadêmicos -->
+<!-------------------------------------------------------->
+<!DOCTYPE html>
+<html lang="pt-br">
+    <!-- HEAD -->
+    <head>
+        <!-- Basic Page Needs
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <meta charset="utf-8">
+        <!-- TITLE -->
+        <title>Gerenciador de Acervos de Museus Acadêmicos</title>
+        <link rel="icon" href="../_icons/favicon/museu_icon.png">
+        <meta name="description" content="">
+        <meta name="author" content="Jonathan Sias">
+        <!--  -->
+        <!-- Responsive attribute to mobiles view -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+        <!-- Font Awesome Icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- STYLE -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <!-- BODY
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <body>
+        <!-- HEADER -->
+        <header>
+            <div class="topnav">
+                <ul class="nav navbar-nav">
+                    <li> <a href="login.html"> <i class="fa fa-sign-in"></i> LOGIN</a> </li>
+                    <li onclick="openNav()" id="menu-button"> <a><span>&#9776; Menu</span></a> </li>
+                </ul>
+            </div>
+        </header>
+        <!-- Side Nav
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <div id="mySidenav" class="sidenav">
+            <a id="closebtn" href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="home.html"> <i class="fa fa-home"></i> Home</a>
+            <a href="museus.html"> <i class="fa fa-university"></i> Museus</a>
+            <a href="colecoes.html"> <i class="fa fa-tags"></i> Coleções</a>
+            <a href="pecas.html"> <i class="fa fa-picture-o"></i> Peças</a>
+            <a href="usuarios.html"> <i class="fa fa-users"></i> Usuários</a>
+        </div>
+        <!-- Content
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <div id="main" class="conteudo">
+            <div class="row">
+                <div class="col-md-10">
+                    <h1>Coleções</h1>
+                </div>
+                <div class="col-md-2">
+                    <a href="#"> <button class="btn-submit" type="submit">Cadastrar Coleção</button> </a>
+                </div>
+            </div>
+            <div class="row">
+                <!-- BUSCAR COLEÇAO -->
+                <div class="input-group col-md-8">
+                    <input type="text" class="form-control" placeholder="buscar coleção..." aria-label="buscar" aria-describedby="button-addon2">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary btn-submit" type="button" style="padding: 0% 15% 0% 15%;">Buscar</button>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <!--  -->
+                </div>
+            </div>
+            <!-- linha divisória -->
+            <!-- <hr> -->
+            <!-- quebra de linha -->
+            <br>
+            <div class="">
+                <table class="table">
+                    <thead class="thead table-head">
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Nome</th>
+                            <th scope="col">Museu</th>
+                            <th scope="col">Peças</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Pinturas</td>
+                            <td>MALG</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Animais Selvagens</td>
+                            <td>Carlos Ritter</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Receitas de Doces Tradicionais</td>
+                            <td>Museu do Doce</td>
+                            <td>15</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Predadores</td>
+                            <td>Carlos Ritter</td>
+                            <td>50</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>Pop Art</td>
+                            <td>MALG</td>
+                            <td>25</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">6</th>
+                            <td>Maquinário Fábricas</td>
+                            <td>Museu do Doce</td>
+                            <td>7</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">7</th>
+                            <td>Latas Compotas</td>
+                            <td>Museu do Doce</td>
+                            <td>37</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">6</th>
+                            <td>Insetos</td>
+                            <td>Carlos Ritter</td>
+                            <td>12</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!-- Sidenav script -->
+        <script>
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "15%";
+                document.getElementById("main").style.marginLeft = "20%";
+                document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+            }
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+                document.getElementById("main").style.marginLeft= "10%";
+                document.body.style.backgroundColor = "white";
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,256 @@
+<!-------------------------------------------------------->
+<!-- GAMA - Gerenciador de Acervos de Museus Acadêmicos -->
+<!-------------------------------------------------------->
+<!DOCTYPE html>
+<html lang="pt-br">
+    <!-- HEAD -->
+    <head>
+        <!-- Basic Page Needs
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <meta charset="utf-8">
+        <!-- TITLE -->
+        <title>Gerenciador de Acervos de Museus Acadêmicos</title>
+        <link rel="icon" href="_icons/favicon/favicon-32x32.png">
+        <meta name="description" content="">
+        <meta name="author" content="Jonathan Sias">
+        <!--  -->
+        <!-- Responsive attribute to mobiles view -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+        <!-- Font Awesome Icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- STYLE -->
+        <link rel="stylesheet" href="_css/index.css">
+    </head>
+    <!-- BODY
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <body class="main">
+        <!-- HEADER -->
+        <header>
+            <!-- Top Nav -->
+            <div class="topnav">
+                <ul class="nav navbar-nav">
+                    <li> <a href="login.html"> <i class="fa fa-sign-in"></i> Login</a> </li>
+                </ul>
+                <!-- <nav>
+                    <a class="active" href="login.html">Login</a>
+                </nav> -->
+            </div>
+        </header>
+        <!-- Side Nav
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <div class="sidenav">
+            <div>
+                <ul class="nav navbar-nav">
+                    <li> <a href="index.html"> <i class="fa fa-home"></i> Home</a> </li>
+                    <li> <a href="museus.html"> <i class="fa fa-university"></i> Museus</a> </li>
+                    <li> <a href="colecoes.html"> <i class="fa fa-tags"></i> Coleções</a> </li>
+                    <li> <a href="pecas.html"> <i class="fa fa-picture-o"></i> Peças</a> </li>
+                    <li> <a href="usuarios.html"> <i class="fa fa-users"></i> Usuários</a> </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Content
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <div class="conteudo">
+            <!-- CADASTRAR MUSEU -->
+            <div class="row">
+                <div class="col-sm 5"></div>
+                <div class="col-sm-7">
+                    <a href="addmuseu.html"> <button type="submit" class="btn btn-default">Cadastrar Museu</button> </a>
+                </div>
+            </div>
+            <br><br>
+            <!-- CARLOS RITTER
+            –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+            <div style="border-top: 6px solid #252839; background-color: #f5f5f5; border-radius: 5px; padding: 2%">
+                <h4>MUSEU DE CIÊNCIAS NATURAIS CARLOS RITTER</h4>
+                <nav>
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                        <a class="nav-item nav-link active" id="nav-missao-tab" data-toggle="tab" href="#nav-missao" role="tab" aria-controls="nav-missao" aria-selected="true">Missão</a>
+                        <a class="nav-item nav-link" id="nav-historia-tab" data-toggle="tab" href="#nav-historia" role="tab" aria-controls="nav-historia" aria-selected="true">História</a>
+                        <a class="nav-item nav-link" id="nav-acervo-tab" data-toggle="tab" href="#nav-acervo" role="tab" aria-controls="nav-acervo" aria-selected="true">Acervo</a>
+                        <a class="nav-item nav-link" id="nav-visitas-tab" data-toggle="tab" href="#nav-visitas" role="tab" aria-controls="nav-visitas" aria-selected="true">Exposição e visitas</a>
+                        <a class="nav-item nav-link" id="nav-sobre-tab" data-toggle="tab" href="#nav-sobre" role="tab" aria-controls="nav-sobre" aria-selected="true">Sobre</a>
+                    </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-missao" role="tabpanel" aria-labelledby="nav-missao-tab">
+                        <p style="text-align:justify; margin: 3%">O Museu de Ciências Naturais Carlos Ritter tem por missão realizar atividades voltadas ao ensino, à pesquisa e à extensão universitária. Sua temática foca na área das ciências naturais, em especial a Zoologia e a Paleozoologia, além das áreas do conhecimento biológico correlatas.
+                        </p>
+                    </div>
+                    <div class="tab-pane fade" id="nav-historia" role="tabpanel" aria-labelledby="nav-historia-tab">
+                        <p style="text-align:justify; margin: 3%">O Museu de Ciências Naturais Carlos Ritter teve sua origem na doação de animais taxidermizados artisticamente e mosaicos entomológicos confeccionados por Carlos Ritter entre o final do século XIX e primeiros anos do século XX. O Museu abriu ao público em 1970. Desde 1991 é um órgão suplementar do Instituto de Biologia da UFPel.
+                        </p>
+                    </div>
+                    <div class="tab-pane fade" id="nav-acervo" role="tabpanel" aria-labelledby="nav-acervo-tab">
+                        <p style="text-align:justify; margin: 3%">O museu possui basicamente espécimes de História Natural, dividindo seu acervo entre a coleção científica e a didática para exposição.
+                        </p>
+                        <p style="text-align:justify; margin: 3%">A coleção científica, que possui dados referenciados e pode ser utilizada em estudos mais consistentes, está depositada no Laboratório de Zoologia do Departamento de Zoologia e Genética, que faz parte do Instituto de Biologia da UFPel.
+                        </p>
+                        <p style="text-align:justify; margin: 3%">A coleção para exposição não possui um caráter científico, por não possuir seus dados de coleta completos.
+                        </p>
+                        <p style="text-align:justify; margin: 3%">Mas está totalmente acessível ao público, em exposição. O museu apresenta uma rica mostra da diversidade da fauna local e conta ainda com um importante acervo de lepidópteros (borboletas e mariposas) da coleção histórica de Ceslau Maria Biezanko.
+                        A coleção entomológica tem 4500 insetos.
+                        </p>
+                        <p style="text-align:justify; margin: 3%">Além dos insetos e das cerca de 540 aves e mamíferos, o Museu tem ainda coleções de ictiologia (peixes fixados em álcool e formol), herpetologia (cerca de 200 espécimes de répteis e anfíbios, coleção da qual parte é osteológica e parte é conservada em soluções de álcool e formol), mastozoologia (cerca de 100 espécimes de mamíferos), osteologia (esqueletos) e paleontologia (cerca de 200 fósseis principalmente de vertebrados e invertebrados).
+                        </p>
+                    </div>
+                    <div class="tab-pane fade" id="nav-visitas" role="tabpanel" aria-labelledby="nav-visitas-tab">
+                        <p style="text-align:justify; margin: 3%">Quase todo o acervo do Museu de História Natural Carlos Ritter é exposto permanentemente, mas também são realizadas exposições temporárias, com temáticas especificas e com parcerias externas, ampliando as possibilidades de conhecimento no museu.
+                        </p>
+                        <p style="text-align:justify; margin: 3%">O museu está aberto ao público em geral e também disponibiliza visitas e atividades guiadas voltadas para grupos de estudantes do ensino médio e fundamental.
+                        </p>
+                    </div>
+                    <div class="tab-pane fade" id="nav-sobre" role="tabpanel" aria-labelledby="nav-sobre-tab">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <h6 style="text-align:justify; margin-top: 3%">Endereço</h6>
+                                    <p style="text-align:justify">Praça Cel. Pedro Osório, 1 – Centro, Pelotas – RS, 96010-150</p>
+                                <h6 style="text-align:justify; margin-top: 3%">Telefone</h6>
+                                    <p style="text-align:justify">(53) 3222-0880</p>
+                                <h6 style="text-align:justify; margin-top: 3%">Facebook</h6>
+                                    <a href="https://www.facebook.com/museu.carlosritter" style="text-align:justify">Museu Carlos Ritter</a>
+                                <h6 style="text-align:justify; margin-top: 3%">E-mail</h6>
+                                    <p style="text-align:justify">museucarlosritter@gmail.com</p>
+                            </div>
+                            <div class="col-md-4">
+                                <br>
+                                <span>
+                                    <img src="_imagens/Capturar-crtter.png" class="img-thumbnail">
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <hr> -->
+            <br><br>
+            <!-- MALG
+            –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+            <div style="border-top: 6px solid #252839; background-color: #f5f5f5; border-radius: 5px; padding: 2%">
+                <h4>MALG – MUSEU DE ARTE LEOPOLDO GOTUZZO</h4>
+                <nav>
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                        <a class="nav-item nav-link active" id="nav-missao2-tab" data-toggle="tab" href="#nav-missao2" role="tab" aria-controls="nav-missao2" aria-selected="true">Missão</a>
+                        <a class="nav-item nav-link" id="nav-historia2-tab" data-toggle="tab" href="#nav-historia2" role="tab" aria-controls="nav-historia2" aria-selected="true">História</a>
+                        <a class="nav-item nav-link" id="nav-acervo2-tab" data-toggle="tab" href="#nav-acervo2" role="tab" aria-controls="nav-acervo2" aria-selected="true">Acervo</a>
+                        <a class="nav-item nav-link" id="nav-visitas2-tab" data-toggle="tab" href="#nav-visitas2" role="tab" aria-controls="nav-visitas2" aria-selected="true">Exposição e visitas</a>
+                        <a class="nav-item nav-link" id="nav-sobre2-tab" data-toggle="tab" href="#nav-sobre2" role="tab" aria-controls="nav-sobre2" aria-selected="true">Sobre</a>
+                    </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-missao2" role="tabpanel" aria-labelledby="nav-missao2-tab">
+                        <p style="text-align:justify; margin: 3%">O Museu de Arte Leopoldo Gotuzzo (MALG) tem como missão zelar pela preservação e conservação de seu acervo artístico e documental, assim como divulgá-lo amplamente, através de projetos curatoriais, expográficos e virtuais. Cabe ao MALG garantir a integridade física do acervo de obras de Leopoldo Gotuzzo, patrono do museu, e promover a pesquisa e a produção crítica e intelectual a respeito de sua contribuição para a história da arte brasileira.
+                        </p>
+                    </div>
+                    <div class="tab-pane fade" id="nav-historia2" role="tabpanel" aria-labelledby="nav-historia2-tab">
+                        <p style="text-align:justify; margin: 3%">Inaugurado em 07 de novembro de 1986, o MALG estava inicialmente vinculado à Pró-Reitoria de Extensão e Cultura da UFPel. Em 1992 passou a ser vinculado ao Instituto de Letras e Artes, atual Centro de Artes.
+                        </p>
+                        <p style="text-align:justify; margin: 3%">Atualmente o Museu congrega as atividades de ensino, pesquisa e extensão e, atendendo à sua condição de museu universitário, promove a conservação e divulgação de seu acervo e ações de caráter artístico-cultural.
+                        </p>
+                        <p style="text-align:justify; margin: 3%">Também tem a responsabilidade de desenvolver projetos educativos que ampliem o acesso da população brasileira aos bens artísticos e culturais produzidos no passado e na atualidade.
+                        </p>
+                    </div>
+                    <div class="tab-pane fade" id="nav-acervo2" role="tabpanel" aria-labelledby="nav-acervo2-tab">
+                        <p style="text-align:justify; margin: 3%">O Museu possui um acervo de mais de 3.000 obras divididas em sete coleções: Coleção Leopoldo Gotuzzo, Coleção Escola de Belas Artes, Coleção Dr. João Gomes de Mello, Coleção Faustino Trápaga, Coleção L. C. Vinholes, Coleção Século XX e Coleção Século XXI.
+                        </p>
+                    </div>
+                    <div class="tab-pane fade" id="nav-visitas2" role="tabpanel" aria-labelledby="nav-visitas2-tab">
+                        <p style="text-align:justify; margin: 3%">No espaço do museu são realizadas exposições de longa duração com os objetos e obras do artista Leopoldo Gotuzzo. As exposições temporárias são feitas com obras de outras coleções ou com a produção artística contemporânea, em colaboração com os profissionais que atuam no Centro de Artes da UFPEL ou através de projetos de cooperação interinstitucionais.
+                        </p>
+                        <p style="text-align:justify; margin: 3%">O museu organiza ações educativas para promover a fruição e reflexão a partir das exposições e do acervo artístico e documental. Também desenvolve atividades de integração Museu/Instituições de Ensino/Comunidade e estimula a participação do corpo docente e discente da Universidade Federal de Pelotas nos seus espaços e a partir do seu acervo.
+                        </p>
+                    </div>
+                    <div class="tab-pane fade" id="nav-sobre2" role="tabpanel" aria-labelledby="nav-sobre2-tab">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <h6 style="text-align:justify; margin-top: 3%">Endereço</h6>
+                                    <p style="text-align:justify">Praça 7 de Julho, 180 – Centro, Pelotas – RS (prédio do antigo Lyceu – frente ao Mercado Público de Pelotas)</p>
+                                <h6 style="text-align:justify; margin-top: 3%">Telefone</h6>
+                                    <p style="text-align:justify">(53) 3284-4319</p>
+                                <h6 style="text-align:justify; margin-top: 3%">Facebook</h6>
+                                    <a href="https://www.facebook.com/museuleopoldogotuzzo" style="text-align:justify">Museu Carlos Ritter</a>
+                                <h6 style="text-align:justify; margin-top: 3%">E-mail</h6>
+                                    <p style="text-align:justify">secretariamalg@gmail.com</p>
+                            </div>
+                            <div class="col-md-4 align-items-center">
+                                <br>
+                                <span>
+                                    <img class="img-thumbnail" src="_imagens/malg2.png">
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <hr> -->
+            <br><br>
+            <!-- MUSEU DOCE
+            –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+            <div style="border-top: 6px solid #252839; background-color: #f5f5f5; border-radius: 5px; padding: 2%">
+                <h4>MUSEU DO DOCE</h4>
+                <nav>
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                        <a class="nav-item nav-link active" id="nav-missao3-tab" data-toggle="tab" href="#nav-missao3" role="tab" aria-controls="nav-missao3" aria-selected="true">Missão</a>
+                        <a class="nav-item nav-link" id="nav-historia3-tab" data-toggle="tab" href="#nav-historia3" role="tab" aria-controls="nav-historia3" aria-selected="true">História</a>
+                        <a class="nav-item nav-link" id="nav-acervo3-tab" data-toggle="tab" href="#nav-acervo3" role="tab" aria-controls="nav-acervo3" aria-selected="true">Acervo</a>
+                        <a class="nav-item nav-link" id="nav-visitas3-tab" data-toggle="tab" href="#nav-visitas3" role="tab" aria-controls="nav-visitas3" aria-selected="true">Exposição e visitas</a>
+                        <a class="nav-item nav-link" id="nav-sobre3-tab" data-toggle="tab" href="#nav-sobre3" role="tab" aria-controls="nav-sobre3" aria-selected="true">Sobre</a>
+                    </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-missao3" role="tabpanel" aria-labelledby="nav-missao3-tab">
+                        <p style="text-align:justify; margin: 3%">O Museu do Doce tem como missão salvaguardar os suportes de memória da tradição doceira de Pelotas e da região, com o compromisso de produzir conhecimento sobre esse patrimônio.
+                        </p>
+                    </div>
+                    <div class="tab-pane fade" id="nav-historia3" role="tabpanel" aria-labelledby="nav-historia3-tab">
+                        <p style="text-align:justify; margin: 3%">O Museu do Doce é uma conquista da comunidade doceira que, através de negociação realizada com a Secretaria Municipal de Cultura e Instituto do Patrimônio Histórico e Artístico Nacional (IPHAN), definiu como sede para essa nova instituição o casarão situado na Praça Coronel Pedro Osório, 08, no centro histórico da cidade de Pelotas.
+                        </p>
+                        <p style="text-align:justify; margin: 3%">O Casarão que abriga o museu provavelmente foi projetado e construído pelo arquiteto italiano José Izella, em 1878, para servir como residência para a família do Conselheiro Francisco Antunes Maciel (Conselheiro do Império). Entre os anos de 1950 e 1973, a edificação serviu como sede do Quartel General da 8ª Brigada de Infantaria Motorizada de Pelotas. Depois desse período, foi ocupado por diversos órgãos públicos municipais.
+                        </p>
+                        <p style="text-align:justify; margin: 3%">Em 1977 a casa foi tombada em nível federal pelo IPHAN e comprada pela UFPel em 2006. Em 2010 a UFPel deu início ao processo de restauração e adequação das instalações para uso do Museu. O restauro foi concluído em 2013, quando o Museu do Doce instalou-se na casa e foi aberto ao público.
+                        </p>
+                    </div>
+                    <div class="tab-pane fade" id="nav-acervo3" role="tabpanel" aria-labelledby="nav-acervo3-tab">
+                        <p style="text-align:justify; margin: 3%">O acervo é formado por peças relacionadas com a história da tradição doceira de Pelotas e região, sejam elas históricas, documentais, bibliográficas ou impressas, além de todo objeto/representação que tenha relação com a missão do Museu.
+                        </p>
+                    </div>
+                    <div class="tab-pane fade" id="nav-visitas3" role="tabpanel" aria-labelledby="nav-visitas3-tab">
+                        <p style="text-align:justify; margin: 3%">O museu, que se configura como órgão suplementar do Instituto de Ciências Humanas da UFPel, recebe um grande número de visitantes locais, turista e grupos de estudantes.
+                        </p>
+                        <p style="text-align:justify; margin: 3%">A sua exposição de longa duração possui características de acessibilidade para as pessoas com deficiência.
+                        </p>
+                    </div>
+                    <div class="tab-pane fade" id="nav-sobre3" role="tabpanel" aria-labelledby="nav-sobre3-tab">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <h6 style="text-align:justify; margin-top: 3%">Endereço</h6>
+                                    <p style="text-align:justify">Praça Coronel Pedro Osório, 08 – Centro – Pelotas/RS</p>
+                                <h6 style="text-align:justify; margin-top: 3%">Telefone</h6>
+                                    <p style="text-align:justify">(53) 3921-6291</p>
+                                <h6 style="text-align:justify; margin-top: 3%">Facebook</h6>
+                                    <a href="https://www.facebook.com/museudodoce/" style="text-align:justify">Museu Carlos Ritter</a>
+                                <h6 style="text-align:justify; margin-top: 3%">E-mail</h6>
+                                    <p style="text-align:justify">museudodocedaufpel@gmail.com</p>
+                            </div>
+                            <div class="col-md-4">
+                                <br>
+                                <span>
+                                    <img class="img-thumbnail" src="_imagens/DOCE.png">
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

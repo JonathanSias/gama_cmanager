@@ -1,0 +1,36 @@
+@startuml
+    skinparam usecase{
+        BorderColor Navy
+        BackgroundColor LightCyan
+        ArrowColor Navy
+        FontColor Navy
+    }
+    skinparam ActorBorderColor Navy
+    skinparam ActorFontColor Navy
+    actor Reitoria  #MintCream
+    actor Diretor   #MintCream
+    actor Técnico   #MintCream
+    Diretor <|-- Reitoria
+    Técnico <|-- Diretor
+    
+    Técnico -right-> (Gerenciar Usuários)
+    (Gerenciar Usuários) .> (Cadastrar Técnico) : extends
+    (Gerenciar Usuários) .> (Remover Técnico) : extends
+    (Gerenciar Usuários) .> (Editar Técnico) : extends
+    Técnico -right-> (Gerenciar Coleções)
+    (Gerenciar Coleções) .> (Cradastrar Peça) : extends
+    (Gerenciar Coleções) .> (Remover Peça) : extends
+    (Gerenciar Coleções) .> (Editar Peça) : extends
+    
+    Diretor -right-> (Cadastrar Técnico)
+    Diretor -right-> (Gerenciar Museu)
+    (Gerenciar Museu) .> (Cradastrar Museu) : extends
+    (Gerenciar Museu) .> (Remover Museu) : extends
+    (Gerenciar Museu) .> (Editar Museu) : extends
+    
+    Reitoria -right-> (Gerenciar Museus)
+    (Gerenciar Museus) .> (Cradastrar Museus) : extends
+    (Gerenciar Museus) .> (Remover Museus) : extends
+    (Gerenciar Museus) .> (Editar Museus) : extends
+    Reitoria -right-> (Cadastrar Diretor)
+@enduml
