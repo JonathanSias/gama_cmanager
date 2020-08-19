@@ -1,0 +1,3 @@
+[submodule "cmanager/laradock"]
+	path = cmanager/laradock
+	url = https://github.com/laradock/laradock.git
