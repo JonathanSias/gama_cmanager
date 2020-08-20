@@ -17,7 +17,7 @@ git clone https://github.com/JonathanSias/collection-manager.git
 * [HTML5]()
 * [CSS3]()
 * [Bootstrap](https://getbootstrap.com)
-* [Laravel]()
+* [Laravel](https://laradock.io/)
 * [Postgres](https://www.postgresql.org)
 * [Docker]()
 
