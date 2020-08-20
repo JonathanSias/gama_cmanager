@@ -14,7 +14,17 @@ class CreateMuseusTable extends Migration
     public function up()
     {
         Schema::create('museus', function (Blueprint $table) {
-            $table->id();
+            $table->bigIncrements('id');
+            $table->string('nome');
+            $table->string('endereco');
+            $table->string('bairro');
+            $table->string('cep');
+            $table->string('codigoMuseu');
+            $table->string('telefone');
+            $table->string('email');
+            $table->string('horarios');
+            $table->string('descricao', 2500);
+            // $table->string('codigoMuseu');
             $table->timestamps();
         });
     }

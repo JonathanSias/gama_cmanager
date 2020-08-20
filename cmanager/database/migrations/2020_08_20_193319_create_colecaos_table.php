@@ -14,7 +14,21 @@ class CreateColecaosTable extends Migration
     public function up()
     {
         Schema::create('colecaos', function (Blueprint $table) {
-            $table->id();
+            $table->bigIncrements('id');
+            $table->string('nome');
+            $table->string('dimensao');
+            $table->string('numero');
+            $table->string('instituicao');
+            $table->string('tuteladireta');
+            $table->string('localizacao');
+            $table->string('descricao');
+            $table->string('relevancia');
+            $table->string('utilizacao');
+            // $table->string('conservacao');
+            $table->string('observacoes');
+            $table->string('bibliografia');
+            // $table->string('descricao');
+            // $table->string('codigoColecao');
             $table->timestamps();
         });
     }
