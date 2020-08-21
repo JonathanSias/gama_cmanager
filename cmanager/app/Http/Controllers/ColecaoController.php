@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Colecao;
 
 class ColecaoController extends Controller
 {
@@ -13,7 +14,8 @@ class ColecaoController extends Controller
      */
     public function index()
     {
-        //
+        $collections = Colecao::latest()->paginate(5);
+        return view('gama.collections', compact('collections'))->with('i', (request()->input('page', 1) - 1) *  5);
     }
 
     /**
@@ -23,7 +25,8 @@ class ColecaoController extends Controller
      */
     public function create()
     {
-        //
+        // $colecoes = Colecao::lists(['id', 'nome']);
+        return view('gama.addcollection');
     }
 
     /**
@@ -34,7 +37,27 @@ class ColecaoController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'nome' => 'required',
+            'numero' => 'required',
+            'instituicao' => 'required',
+            'localizacao' => 'required'
+        ]);
+        $colecao = new Colecao;
+        $colecao->nome          = $request->get('nome');
+        $colecao->dimensao      = $request->get('dimensao');
+        $colecao->numero        = $request->get('numero');
+        $colecao->instituicao   = $request->get('instituicao');
+        $colecao->tuteladireta  = $request->get('tuteladireta');
+        $colecao->localizacao   = $request->get('localizacao');
+        $colecao->descricao     = $request->get('descricao');
+        $colecao->relevancia    = $request->get('relevancia');
+        $colecao->utilizacao    = $request->get('utilizacao');
+        // $colecao->conservacao   = $request->get('conservacao');
+        $colecao->observacoes   = $request->get('observacoes');
+        $colecao->bibliografia  = $request->get('bibliografia');
+        $colecao->save();
+        return redirect('colecoes')->with('success', 'Coleção adicionada com sucesso !');
     }
 
     /**
@@ -45,7 +68,7 @@ class ColecaoController extends Controller
      */
     public function show($id)
     {
-        //
+        return view('gama.colecoes.show', ['collections' => Colecao::findOrFail($id)]);
     }
 
     /**
