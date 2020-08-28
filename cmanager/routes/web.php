@@ -47,25 +47,25 @@ Route::view('ver', 'gama.showmuseu');
 Route::view('home', 'gama.home');
 
 Route::resource('museus', 'MuseuController');
-
+// ADD MUSEU
 Route::get('addmuseu', 'MuseuController@create');
-
+// SHOW MUSEU
 Route::get('museus.show/{id}', 'MuseuController@show');
 
 Route::resource('colecoes', 'ColecaoController');
-
+// ADD COLEÇÃO
 Route::get('addcolecao', 'ColecaoController@create');
-
+// SHOW COLEÇÃO
 Route::get('colecoes.show/{id}', 'ColecaoController@show');
 
 Route::resource('pecas', 'PecaController');
-
+// ADD PEÇA
 Route::get('addpeca', 'PecaController@create');
-
+// SHOW PEÇAS
 Route::get('pecas.show/{id}', 'PecaController@show');
 
 Route::resource('usuarios', 'UserController');
-
+// ADD USUÁRIO
 Route::get('addusuario', 'UserController@create');
 
 Route::view('login', 'gama.login');
